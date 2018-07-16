@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <element>
+    <documentName>file01</documentName>
+    <version>1</version>
+    <length>159</length>
+    <pathTofile>./repository/files/file01-1</pathTofile>
+  </element>
+</root>
