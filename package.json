@@ -1,0 +1,22 @@
+{
+  "name": "sharer-server",
+  "version": "0.0.1",
+  "description": "Sharer server",
+  "main": "app/server.js",
+  "scripts": {
+    "server": "node --max_old_space_size=400 app/server.js",
+    "server:dev": "nodemon app/server.js",
+    "start": "if [ \"$TYPE\" = \"worker\" ]; then npm run worker; else npm run server; fi",
+    "start:dev": "if [ \"$TYPE\" = \"worker\" ]; then npm run worker:dev; else npm run server:dev; fi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Murilo Costa",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "request": "^2.79.0",
+    "xml2js": "^0.4.19"
+  }
+}
